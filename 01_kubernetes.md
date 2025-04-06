@@ -109,6 +109,10 @@ Here’s where the Controller Manager comes into play:
 6. The Scheduler decides on a suitable node to run the new pod.
 7. Finally, the Kubelet (a worker node agent) launches the pod on the chosen node.
 
+- Kube Proxy: Manages networking and ensures communication between pods.
+
+The system works autonomously to ensure your application is always running as expected, even if things fail or change.
+
  ---
 
 ## Understanding Pods
