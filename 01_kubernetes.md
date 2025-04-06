@@ -91,23 +91,23 @@ Then, the Container Runtime (like Docker) is used to run the container. If the c
 In summary, the scheduler decides where to launch the application, the Kube API server connects to the Kubelet, and the Kubelet manages the container runtime to launch the application.
 
 In simple terms, the Controller Manager in Kubernetes ensures that the system maintains the desired state of the application. Let's break it down:
-	- Desired state: This is what you want to happen. For example, if you want 3 login pods (containers) running in your application, that's your desired state.
-	- Current state: This is the actual situation. For instance, if only 2 login pods are running instead of the 3 you want, that's the current state.
+ - Desired state: This is what you want to happen. For example, if you want 3 login pods (containers) running in your application, that's your desired state.
+ - Current state: This is the actual situation. For instance, if only 2 login pods are running instead of the 3 you want, that's the current state.
 
 Now, let’s understand the scenario with a real example:
 
 Example:
-	- You want 3 login pods running (desired state).
-	- But due to some issue, only 2 login pods are running (current state).
+ - You want 3 login pods running (desired state).
+ - But due to some issue, only 2 login pods are running (current state).
 
 Here’s where the Controller Manager comes into play:
-	1. The Controller Manager detects that the current state is not equal to the desired state (you need 3 login pods, but only have 2).
-	2. It will inform the Kube API Server to fix this discrepancy.
-	3. The API Server checks the actual state by looking into the etcd database (this stores all information about the system’s state).
-	4. The API Server confirms that there are 2 login pods running.
-	5. It then asks the Scheduler to start a new pod to reach the desired state (3 login pods).
-	6. The Scheduler decides on a suitable node to run the new pod.
-	7. Finally, the Kubelet (a worker node agent) launches the pod on the chosen node.
+1. The Controller Manager detects that the current state is not equal to the desired state (you need 3 login pods, but only have 2).
+2. It will inform the Kube API Server to fix this discrepancy.
+3. The API Server checks the actual state by looking into the etcd database (this stores all information about the system’s state).
+4. The API Server confirms that there are 2 login pods running.
+5. It then asks the Scheduler to start a new pod to reach the desired state (3 login pods).
+6. The Scheduler decides on a suitable node to run the new pod.
+7. Finally, the Kubelet (a worker node agent) launches the pod on the chosen node.
 
  ---
 
