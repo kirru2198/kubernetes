@@ -172,6 +172,8 @@ In managed services, the cloud provider handles the control plane for you, allow
 2. **MiniKube**: A lightweight Kubernetes setup for learning or testing purposes.
  - It runs a single-node Kubernetes cluster on your local machine, where the control and worker node are the same. This setup is easy to manage but not suitable for production.
 
+We can launch EKS cluster using - Terraform, cloudFormation, AWS-CLI and eksctl (tool)
+
 ## kubectl
 
 **kubectl** (or sometimes called kubekettle) is a command-line tool that allows you to interact with your Kubernetes cluster. It sends requests to the Kubernetes API server to perform actions on your cluster.
