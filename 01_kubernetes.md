@@ -75,6 +75,42 @@ Kubernetes architecture has two main components: the **control plane** (master) 
 2. **Kube Proxy**: Manages networking and ensures communication between pods.
 3. **Container Runtime**: Software (like Docker) that runs containers.
 
+---
+The Kube API server acts like an API gateway. It's the main way to interact with Kubernetes. For example, if I want to connect to my Kubernetes cluster from my laptop, my request goes to the Kube API server. All components of Kubernetes communicate through the Kube API server—no component talks directly to another. So, even the scheduler and controller manager communicate through the API server. Think of it like an API gateway that handles all communication, both from users and between components. 
+
+The second component is ETCD, which is a key-value database. It stores data in key-value pairs, like a simple database. You might wonder why Kubernetes needs a database—I'll explain that soon. ETCD is an open-source project and is highly reliable, functioning as a distributed database system. Kubernetes uses ETCD internally to store its data. While we won’t dive deep into ETCD itself, it’s important to know that Kubernetes relies on it, and it’s also managed by CNCF. 
+
+The second component is the Scheduler, and it plays a very important role. Let’s say you have two machines: Machine A with 2 GB RAM and 2 CPUs available, and Machine B with 8 GB RAM and 8 CPUs available. If you want to launch an application, the scheduler will choose Machine B because it has more resources.
+
+In Kubernetes, your application runs in containers, and the scheduler decides which worker node (machine) should run the application. If you have multiple worker nodes, the scheduler will run algorithms to decide the best node to run your application, considering available resources like memory, CPU, and overall system performance.
+
+Once the scheduler chooses the best node, it sends this decision to the Kube API server. The Kube API server then communicates with the Kubelet on that node to launch the application. The Kubelet is an agent that runs on each worker node and is responsible for managing the containers. It checks the status of the node and communicates with the Kube API server to keep everything updated.
+
+Then, the Container Runtime (like Docker) is used to run the container. If the container image is not present on the node, the Kubelet will pull it from a container registry like Docker Hub and start the container.
+
+In summary, the scheduler decides where to launch the application, the Kube API server connects to the Kubelet, and the Kubelet manages the container runtime to launch the application.
+
+In simple terms, the Controller Manager in Kubernetes ensures that the system maintains the desired state of the application. Let's break it down:
+	- Desired state: This is what you want to happen. For example, if you want 3 login pods (containers) running in your application, that's your desired state.
+	- Current state: This is the actual situation. For instance, if only 2 login pods are running instead of the 3 you want, that's the current state.
+
+Now, let’s understand the scenario with a real example:
+
+Example:
+	- You want 3 login pods running (desired state).
+	- But due to some issue, only 2 login pods are running (current state).
+
+Here’s where the Controller Manager comes into play:
+	1. The Controller Manager detects that the current state is not equal to the desired state (you need 3 login pods, but only have 2).
+	2. It will inform the Kube API Server to fix this discrepancy.
+	3. The API Server checks the actual state by looking into the etcd database (this stores all information about the system’s state).
+	4. The API Server confirms that there are 2 login pods running.
+	5. It then asks the Scheduler to start a new pod to reach the desired state (3 login pods).
+	6. The Scheduler decides on a suitable node to run the new pod.
+	7. Finally, the Kubelet (a worker node agent) launches the pod on the chosen node.
+
+ ---
+
 ## Understanding Pods
 
 In Kubernetes, we don’t deal with containers directly. Instead, we use an abstraction layer called **Pod**. A Pod is the smallest unit that you deploy in Kubernetes. It can contain one or more containers that run together on the same node.
