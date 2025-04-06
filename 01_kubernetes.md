@@ -178,6 +178,7 @@ We can launch EKS cluster using - Terraform, cloudFormation, AWS-CLI and eksctl 
 
 **kubectl** (or sometimes called kubekettle) is a command-line tool that allows you to interact with your Kubernetes cluster. It sends requests to the Kubernetes API server to perform actions on your cluster.
 
+---
 ### Steps to Set Up EKS Cluster
 
 1. **Install Required Tools**:
