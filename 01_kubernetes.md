@@ -127,27 +127,40 @@ In managed services, the cloud provider handles the control plane for you, allow
 2. Use the command: 
    ```bash
    kubectl apply -f my-pod.yaml
-Checking Pod Status
+Here's the provided content written in Markdown format:
+---
+# Checking Pod Status
+
 To check the status of the pod, use:
-bash
-Run
-Copy code
+
+```bash
 kubectl get pods
-Understanding the YAML File
-The YAML file specifies the details of the pod, like the image to be used (e.g., nginx).
+```
 
-Behind the Scenes
-When you run the kubectl apply -f my-pod.yaml command:
+## Understanding the YAML File
 
-It sends instructions to the Kubernetes API Server.
-The Scheduler determines which node is best suited for the pod.
-The node's container runtime pulls the specified image and runs the pod.
-ReplicaSets
+The YAML file specifies the details of the pod, like the image to be used (e.g., `nginx`).
+
+## Behind the Scenes
+
+When you run the `kubectl apply -f my-pod.yaml` command:
+
+- It sends instructions to the Kubernetes API Server.
+- The Scheduler determines which node is best suited for the pod.
+- The node's container runtime pulls the specified image and runs the pod.
+
+## ReplicaSets
+
 A ReplicaSet ensures that a specific number of pods are always running. If a pod is deleted, the ReplicaSet will automatically recreate a new one to match the desired number of pods.
 
-Key Points about ReplicaSets
-If you delete a pod, the ReplicaSet will automatically create a new one.
-This ensures that your desired number of pods is always maintained.
-This process is not autoscaling; it only maintains the desired state.
-Conclusion
+### Key Points about ReplicaSets
+
+- If you delete a pod, the ReplicaSet will automatically create a new one.
+- This ensures that your desired number of pods is always maintained.
+- This process is not autoscaling; it only maintains the desired state.
+
+## Conclusion
+
 Kubernetes may feel complex at first, but it's an essential tool for managing containers. It’s highly in-demand and will become more enjoyable as you understand it. We’ll revisit these concepts and dive deeper into Deployments and scaling applications in future sessions. Thank you for your time today!
+```
+
