@@ -210,8 +210,3 @@ A ReplicaSet ensures that a specific number of pods are always running. If a pod
 - This ensures that your desired number of pods is always maintained.
 - This process is not autoscaling; it only maintains the desired state.
 
-## Conclusion
-
-Kubernetes may feel complex at first, but it's an essential tool for managing containers. It’s highly in-demand and will become more enjoyable as you understand it. We’ll revisit these concepts and dive deeper into Deployments and scaling applications in future sessions. Thank you for your time today!
-```
-
