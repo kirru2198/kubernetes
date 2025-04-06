@@ -50,7 +50,7 @@ Kubernetes (often called K8S) is one of the most popular container orchestration
 3. **Service Discovery**: Ensures different services in your app can find and communicate with each other.
 4. **Load Balancing**: Manages traffic to ensure smooth application performance.
 5. **Scaling**: Allows for easy scaling of applications up or down.
-6. **Protabulity across Environiment**: we can have multiple environments within Kubernetes cluster or we can have multiple Kubernetes clusters --- Portability across environments is also important. With Kubernetes, you can easily move applications between different environments or even across multiple Kubernetes clusters. Doing this manually would be complex, but Kubernetes makes it simple.
+6. **Portability Across Environments**: we can have multiple environments within Kubernetes cluster or we can have multiple Kubernetes clusters --- Portability across environments is also important. With Kubernetes, you can easily move applications between different environments or even across multiple Kubernetes clusters. Doing this manually would be complex, but Kubernetes makes it simple.
 
 ## Kubernetes Architecture
 
