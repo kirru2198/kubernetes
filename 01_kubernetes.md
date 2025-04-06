@@ -6,7 +6,7 @@ Container orchestration is the process of managing and automating the deployment
 
 - Deploying containers across multiple machines
 - Scaling containers up or down as needed
-- Managing container networking and communication
+- Managing container networking and communication (Managing means to ensure everything should be correct and work properly or rightly- right thing to right thing type)
 - Handling failures and ensuring containers stay up and running
 
 Basically, it's like having a smart system that makes sure all your containers work together smoothly and efficiently.
