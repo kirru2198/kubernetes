@@ -25,8 +25,8 @@ The lifecycle of a container refers to everything that happens to it from start 
 
 - **Deployment**: Running the container.
 - **Scaling**: Adjusting the number of containers.
-- **Networking**: Connecting containers for communication.
-- **Management**: Handling tasks like monitoring, updates, and maintenance.
+- **Networking**: Connecting containers for communication. (networking means one micro service wants to connect with another microservice that what networking of the container ----> service discovery)
+- **Management**: Handling tasks like monitoring, updates, and maintenance. (Management = the word management include everything -- all the administration part of the container -----> load balancing, self-healing)
 
 ### Key Features of Container Orchestration Tools
 
