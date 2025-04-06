@@ -167,7 +167,10 @@ In managed services, the cloud provider handles the control plane for you, allow
 ### Other Ways to Launch Kubernetes
 
 1. **EC2 Setup (Manual Kubernetes Cluster)**: Manually create an EC2 instance as a master and others as worker nodes.
-2. **MiniKube**: A lightweight Kubernetes setup for learning or testing purposes.
+- You have to manually set up the Kubernetes components and handle the management of the cluster, including high availability and backups.
+
+3. **MiniKube**: A lightweight Kubernetes setup for learning or testing purposes.
+- It runs a single-node Kubernetes cluster on your local machine, where the control and worker node are the same. This setup is easy to manage but not suitable for production.
 
 ## kubectl
 
