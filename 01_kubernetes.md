@@ -161,7 +161,7 @@ There are several ways to launch a Kubernetes cluster, including:
 
 In managed services, the cloud provider handles the control plane for you, allowing you to focus on managing the worker nodes where your applications run. The benefit here is that you don’t need to maintain high availability, security, or patching for the control plane; it’s handled by the cloud provider.
 
-<img width="556" alt="image" src="https://github.com/user-attachments/assets/42c94fdb-548d-4707-bc24-4164ea986193" />
+<img width="553" alt="image" src="https://github.com/user-attachments/assets/84c252b8-8df0-466c-aefa-acb4e2466b61" />
 
 
 ### Other Ways to Launch Kubernetes
