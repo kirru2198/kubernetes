@@ -51,6 +51,8 @@ Kubernetes (often called K8S) is one of the most popular container orchestration
 
 Kubernetes architecture has two main components: the **control plane** (master) and the **data plane** (worker nodes).
 
+<img width="607" alt="image" src="https://github.com/user-attachments/assets/371a9b34-ff03-4178-8bbc-a840e3a1a2b8" />
+
 ### Control Plane Components
 
 1. **Kube API Server**: The main way to interact with Kubernetes.
