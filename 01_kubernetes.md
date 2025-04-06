@@ -137,7 +137,10 @@ Example:
 
 Imagine you're the head of Domino's in India, and you want to know which region (Delhi, Bangalore, etc.) is ordering more pizzas. Normally, you could collect the IP address of the users from the login page to determine their location and analyze the data. Technically, yes, you could add that logic directly to the login application.
 
-But here's the catch: microservices are meant to handle one specific task. If you add this logic for tracking user IPs directly in the login service, you would be making the application more complex and going back to a monolithic approach, which defeats the purpose of microservices. Microservices should only focus on one thing.
+But here's the catch: microservices are meant to handle one specific task. If you add this logic for tracking user IPs directly in the login service, you would be making the application more complex and going back to a monolithic approach, which defeats the purpose of microservices. Microservices should only focus on one thing. (= Here monolithic means all the code of each microservices in a single code, but microservice approach means one logic and it's dependencies)
+
+<img width="299" alt="image" src="https://github.com/user-attachments/assets/ee028cf0-88ce-4bd6-8c55-475e2619e120" />
+<img width="560" alt="image" src="https://github.com/user-attachments/assets/13017718-245e-4f7e-95cf-fb20aca73b97" />
 
 Instead, Kubernetes offers a solution: Pods. A Pod can contain multiple containers. For instance, your main container handles the login logic, while another container inside the same Pod can collect the IP addresses and process the data separately. This way, your main container stays focused on the core business logic, and the additional logic is offloaded to a separate container, keeping things simple and modular.
 
