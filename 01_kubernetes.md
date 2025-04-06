@@ -2,6 +2,8 @@
 
 ## What is Container Orchestration?
 
+It is a system for automating the lifecycle of a container.
+
 Container orchestration is the process of managing and automating the deployment, scaling, and operation of containers. Containers are lightweight and portable, but when you have many containers running across different machines, it can get complex. Container orchestration tools like Kubernetes help you manage all of this by automating tasks like:
 
 - Deploying containers across multiple machines
