@@ -15,6 +15,10 @@ Acronym - Drive Success Maintain Harmony
 
 Basically, it's like having a smart system that makes sure all your containers work together smoothly and efficiently.
 
+<img width="476" alt="image" src="https://github.com/user-attachments/assets/6d1679df-6765-4431-9553-16f57031a021" />
+
+Here, i have multiple microservices code, i have to run it.
+
 ## What is Kubernetes?
 
 A container orchestration engine (or tool) is a system that automates the management of containers. It helps with tasks like starting, stopping, and scaling containers, as well as ensuring they run smoothly throughout their lifecycle. In simple terms, it's a tool that makes it easier to handle containers automatically.
