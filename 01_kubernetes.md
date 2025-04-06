@@ -17,7 +17,7 @@ Basically, it's like having a smart system that makes sure all your containers w
 
 <img width="476" alt="image" src="https://github.com/user-attachments/assets/6d1679df-6765-4431-9553-16f57031a021" />
 
-Here, i have multiple microservices code, i have to run it.
+Here, i have multiple microservices code, i want to run it. i wnat to run multiple copies of my code.
 
 ## What is Kubernetes?
 
