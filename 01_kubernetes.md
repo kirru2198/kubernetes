@@ -184,6 +184,10 @@ I've personally never launched an EKS cluster from the AWS console because it se
 
 **kubectl** (or sometimes called kubekettle) is a command-line tool that allows you to interact with your Kubernetes cluster. It sends requests to the Kubernetes API server to perform actions on your cluster.
 
+Think of it like a browser for Kubernetes, just like you need a browser (like Chrome or Firefox) to connect to websites. In this case, kubectl is the tool you use to connect to your Kubernetes API server and manage your cluster.
+
+When you run commands using kubectl, it sends requests to the Kubernetes API server to perform actions on your cluster, such as deploying applications or managing resources.
+
 ---
 ### Steps to Set Up EKS Cluster
 ---
