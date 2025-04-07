@@ -1,39 +1,5 @@
 # Kubernetes Overview
 
-## Introduction
-Hello everyone! Can you hear me and see my screen? Please confirm. Alright, let's begin.
-
-## Recap of Previous Discussion
-Yesterday, we discussed the Kubernetes architecture and its objects, including:
-- **Pods**
-- **Replica Sets**
-- **Kubernetes Architecture**
-
-### Kubernetes Architecture
-The architecture consists of two main parts:
-1. **Control Plane**
-   - **kube-apiserver**: Acts as the API gateway for communication.
-   - **Controller Manager**: Ensures the desired state of the system matches the current state.
-   - **Scheduler**: Decides where to run the pods.
-   - **etcd**: A key-value store for all Kubernetes data.
-
-2. **Data Plane (Worker Node)**
-   - **Container Runtime**: Manages containers (e.g., Docker).
-   - **kube-proxy**: Manages networking and traffic.
-
-## Creating an EKS Cluster
-We created an EKS cluster by:
-1. Launching an EC2 instance.
-2. Installing necessary tools (AWS CLI, eksctl, and kubectl).
-3. Creating the cluster with the command:
-   ```bash
-   eksctl create cluster --name <cluster-name> --region <region> --node-type <instance-type>
-   ```
-4. Confirming the cluster setup with:
-   ```bash
-   kubectl get nodes
-   ```
-
 ## Creating Pods
 Creating pods directly has a limitation: if a pod is deleted, it won’t be recreated automatically. Instead, we used a **Replica Set**, which ensures that the desired number of pods is always maintained.
 
