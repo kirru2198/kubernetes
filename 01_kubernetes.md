@@ -229,9 +229,29 @@ Documention for Installaion:
 
 https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 
+<img width="596" alt="image" src="https://github.com/user-attachments/assets/0cc5644a-6b4e-419f-94c2-c2537a1e9468" />
+
+<img width="595" alt="image" src="https://github.com/user-attachments/assets/d56d48e1-74a1-42eb-95b7-d05e025a363f" />
+
+<img width="587" alt="image" src="https://github.com/user-attachments/assets/65876958-1a73-4bf4-9330-7a6c7ba920bb" />
+
 2. this for AWS CLI
 
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+5. Create EKS Cluster and nodes from EC2 Management Host
+
+<img width="590" alt="image" src="https://github.com/user-attachments/assets/54544e3a-3ad6-4651-94ba-90bc14ae0fd9" />
+
+it will create CloudFormation Templet and CloudFormation will lunch cluster for us
+
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/66ff490e-6374-4ba9-a65a-bbcd0c0790a3" />
+
+<img width="595" alt="image" src="https://github.com/user-attachments/assets/553b53d6-690f-464c-8cf7-0ea4314db751" />
+
+This both are worker nodes and the master node will be managed by AWS
+
+<img width="602" alt="image" src="https://github.com/user-attachments/assets/62fdc134-8a97-4de9-8a2e-0260ed703354" />
 
 ### Summary
 
