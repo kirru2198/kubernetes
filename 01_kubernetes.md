@@ -303,7 +303,7 @@ spec:
 2. Use the command: 
    ```bash
    kubectl apply -f my-pod.yaml
-Here's the provided content written in Markdown format:
+   ```
 ---
 # Checking Pod Status
 
@@ -312,7 +312,6 @@ To check the status of the pod, use:
 ```bash
 kubectl get pods
 ```
-
 ## Understanding the YAML File
 
 The YAML file specifies the details of the pod, like the image to be used (e.g., `nginx`).
@@ -329,6 +328,31 @@ When you run the `kubectl apply -f my-pod.yaml` command:
 
 A ReplicaSet ensures that a specific number of pods are always running. If a pod is deleted, the ReplicaSet will automatically recreate a new one to match the desired number of pods.
 
+1. Create a YAML file for the Replicast (e.g., `rs.yaml`).
+   
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replicaset
+  labels:
+    app: nginx
+spec:
+  replicas: 3  
+  selector:
+    matchLabels:
+      app: nginx  
+  template:
+    metadata:
+      labels:
+        app: nginx  
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest  
+        ports:
+        - containerPort: 80
+ ```
 ### Key Points about ReplicaSets
 
 - If you delete a pod, the ReplicaSet will automatically create a new one.
