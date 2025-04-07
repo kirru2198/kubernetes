@@ -197,7 +197,7 @@ When you run commands using kubectl, it sends requests to the Kubernetes API ser
 
 1. **Install Required Tools**:
 - Create a EC2 instance first
-   - AWS CLI
+   - AWS CLI (in AWS Linux it's a default feature)
    - EKS-CTL
    - kubectl
 
