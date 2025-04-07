@@ -174,6 +174,12 @@ In managed services, the cloud provider handles the control plane for you, allow
 
 We can launch EKS cluster using - Terraform, cloudFormation, AWS-CLI and eksctl (tool)
 
+In 2016, AWS introduced EKS (Elastic Kubernetes Service). Before that, AWS had ECS (Elastic Container Service), which is similar to Docker Swarm but doesn't use Kubernetes. Around 2014-2016, Kubernetes became very popular, and other cloud providers like Azure and Google started offering managed Kubernetes services. In response, AWS launched EKS in 2016 as a managed Kubernetes service.
+
+At the time, I was working as a Solution Architect at AWS, primarily handling ECS-related issues. When EKS was launched, it was a bit more complex to set up compared to other services like GKE (Google Kubernetes Engine) or AKS (Azure Kubernetes Service), where setting up a cluster was easy with just a few clicks. AWS made the process a bit more complicated, which led to a company developing a tool called **eksctl**. This tool simplified launching an EKS cluster, and eventually, AWS acquired that company.
+
+I've personally never launched an EKS cluster from the AWS console because it seemed too complicated. Instead, I always used **eksctl**, which made the process much simpler. I'll show you how to use **eksctl** to launch an EKS cluster easily, which is the simplest way to set one up.
+
 ## kubectl
 
 **kubectl** (or sometimes called kubekettle) is a command-line tool that allows you to interact with your Kubernetes cluster. It sends requests to the Kubernetes API server to perform actions on your cluster.
