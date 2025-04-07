@@ -198,7 +198,7 @@ When you run commands using kubectl, it sends requests to the Kubernetes API ser
 1. **Install Required Tools**:
 - Create a EC2 instance first
    - AWS CLI (in AWS Linux it's a default feature)
-   - EKS-CTL
+   - EKS-CTL 
    - kubectl
 
 3. **Assign IAM Role to EC2 Instance**: Assign a role with necessary permissions.
@@ -223,6 +223,13 @@ Implimentation:
 ![image](https://github.com/user-attachments/assets/aa071aa3-b4d4-408d-9f68-8205fa43f2eb)
 
 4. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
+
+Documention for Installaion:
+1. this for EKS-CTL and kubectl
+https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
+
+2. this for AWS CLI
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 ### Summary
 
