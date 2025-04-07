@@ -192,6 +192,9 @@ When you run commands using kubectl, it sends requests to the Kubernetes API ser
 ### Steps to Set Up EKS Cluster
 ---
 
+<img width="290" alt="image" src="https://github.com/user-attachments/assets/44441a96-b820-4bef-aa17-eaa8609b631e" />
+
+
 1. **Install Required Tools**:
 - Create a EC2 instance first
    - AWS CLI
