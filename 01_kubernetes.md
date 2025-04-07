@@ -259,9 +259,11 @@ This both are worker nodes and the master node will be managed by AWS
 - To set up an EKS cluster, you'll need an EC2 instance with tools like AWS CLI, EKS-CTL, and kubectl installed.
 - The EC2 instance needs a role with permissions to interact with AWS services.
 
-Object of Kubernetes
+Objects of Kubernetes
 ---
 In Kubernetes, we create objects, which are the units we manage. There are many types of objects, such as Pods, Deployments, ReplicaSets, and Services. There are two ways to create these objects: the **declarative approach** and the **imperative approach**.
+
+<img width="745" alt="image" src="https://github.com/user-attachments/assets/1fbf2098-4ce6-48b8-8f15-864983cbd961" />
 
 ### Declarative Approach:
 In the declarative approach, we create a **YAML file**. This file defines all the details of the object we want to create. Once the file is ready, we use the `kubectl` command to apply it. The command is:  
