@@ -186,6 +186,7 @@ I've personally never launched an EKS cluster from the AWS console because it se
 
 ---
 ### Steps to Set Up EKS Cluster
+---
 
 1. **Install Required Tools**:
    - AWS CLI
