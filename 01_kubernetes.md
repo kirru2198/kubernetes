@@ -286,6 +286,20 @@ In summary, in Kubernetes, we create objects like Pods, Deployments, and Service
 ### Creating a Pod
 
 1. Create a YAML file for the pod (e.g., `my-pod.yaml`).
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+```
+   
 2. Use the command: 
    ```bash
    kubectl apply -f my-pod.yaml
