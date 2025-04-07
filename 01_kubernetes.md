@@ -189,17 +189,18 @@ I've personally never launched an EKS cluster from the AWS console because it se
 ---
 
 1. **Install Required Tools**:
+- Create a EC2 instance first
    - AWS CLI
    - EKS-CTL
    - kubectl
 
-2. **Assign IAM Role to EC2 Instance**: Assign a role with necessary permissions.
+3. **Assign IAM Role to EC2 Instance**: Assign a role with necessary permissions.
 
-3. **Launch an EC2 Instance**: Create an EC2 instance to interact with your EKS cluster.
+4. **Launch an EC2 Instance**: Create an EC2 instance to interact with your EKS cluster.
 
-4. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
+5. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
 
-5. **Connect to EC2**: Use SSH to connect to the instance.
+6. **Connect to EC2**: Use SSH to connect to the instance.
 
 ### Summary
 
