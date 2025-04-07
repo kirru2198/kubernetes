@@ -1,6 +1,3 @@
-Sure! Here’s the content formatted in Markdown:
-
-```markdown
 # Kubernetes Overview
 
 ## Introduction
