@@ -220,15 +220,17 @@ Implimentation:
 
 3. **Assign IAM Role to EC2**: give necessary permissions
 
-![image](https://github.com/user-attachments/assets/aa071aa3-b4d4-408d-9f68-8205fa43f2eb)
+<img width="592" alt="image" src="https://github.com/user-attachments/assets/36cd1abd-7fb0-4147-8bba-814770d5836e" />
 
 4. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
 
 Documention for Installaion:
 1. this for EKS-CTL and kubectl
+
 https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 
 2. this for AWS CLI
+
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 ### Summary
