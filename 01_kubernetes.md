@@ -215,13 +215,14 @@ Implimentation:
 <img width="608" alt="image" src="https://github.com/user-attachments/assets/014da10c-008e-4f89-ac50-222908b95a22" />
 <img width="620" alt="image" src="https://github.com/user-attachments/assets/a602ad24-d0ad-4d67-8418-ca8b75365e78" />
 
+2. **Connect to EC2**: Use SSH to connect to the instance.
+   <img width="488" alt="image" src="https://github.com/user-attachments/assets/4c5f3d7e-912f-42f8-806e-b5feaa29b29d" />
 
+3. **Assign IAM Role to EC2**: give necessary permissions
 
-   
+![image](https://github.com/user-attachments/assets/aa071aa3-b4d4-408d-9f68-8205fa43f2eb)
 
-2. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
-
-4. **Connect to EC2**: Use SSH to connect to the instance.
+4. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
 
 ### Summary
 
