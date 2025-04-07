@@ -211,10 +211,17 @@ When you run commands using kubectl, it sends requests to the Kubernetes API ser
 Implimentation:
 ---
 1. **Launch an EC2 Instance**: Create an EC2 instance to interact with your EKS cluster.
+<img width="68" alt="image" src="https://github.com/user-attachments/assets/bedda9a4-2d6f-4754-8b81-48b6aabb5ef6" />
+<img width="608" alt="image" src="https://github.com/user-attachments/assets/014da10c-008e-4f89-ac50-222908b95a22" />
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/a602ad24-d0ad-4d67-8418-ca8b75365e78" />
+
+
+
+   
 
 2. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
 
-3. **Connect to EC2**: Use SSH to connect to the instance.
+4. **Connect to EC2**: Use SSH to connect to the instance.
 
 ### Summary
 
