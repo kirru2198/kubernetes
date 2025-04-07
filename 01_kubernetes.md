@@ -202,12 +202,19 @@ When you run commands using kubectl, it sends requests to the Kubernetes API ser
    - kubectl
 
 3. **Assign IAM Role to EC2 Instance**: Assign a role with necessary permissions.
+   - You need to assign a role to your EC2 instance. This role should have permissions such as:
+					 - EC2 full access
+					 - VPC full access
+					 - S3 full access
+   - For testing purposes, you can use an admin policy, but in production, you would create a more restrictive role with the necessary permissions.
 
-4. **Launch an EC2 Instance**: Create an EC2 instance to interact with your EKS cluster.
+Implimentation:
+---
+1. **Launch an EC2 Instance**: Create an EC2 instance to interact with your EKS cluster.
 
-5. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
+2. **Install Necessary Tools on EC2**: Ensure AWS CLI, EKS-CTL, and kubectl are installed.
 
-6. **Connect to EC2**: Use SSH to connect to the instance.
+3. **Connect to EC2**: Use SSH to connect to the instance.
 
 ### Summary
 
