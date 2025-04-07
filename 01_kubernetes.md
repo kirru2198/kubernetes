@@ -259,6 +259,26 @@ This both are worker nodes and the master node will be managed by AWS
 - To set up an EKS cluster, you'll need an EC2 instance with tools like AWS CLI, EKS-CTL, and kubectl installed.
 - The EC2 instance needs a role with permissions to interact with AWS services.
 
+Object of Kubernetes
+---
+In Kubernetes, we create objects, which are the units we manage. There are many types of objects, such as Pods, Deployments, ReplicaSets, and Services. There are two ways to create these objects: the **declarative approach** and the **imperative approach**.
+
+### Declarative Approach:
+In the declarative approach, we create a **YAML file**. This file defines all the details of the object we want to create. Once the file is ready, we use the `kubectl` command to apply it. The command is:  
+```bash
+kubectl apply -f <file-path>
+```
+When we run this command, Kubernetes reads the YAML file, converts it into an API request, and sends it to the Kubernetes API server. The server then takes action and creates the object as described in the YAML file. The declarative approach is preferred because it is well-documented, easy to reuse, and gives a clear definition of the object.
+
+### Imperative Approach:
+In the imperative approach, we don't use a file. Instead, we define everything using **kubectl commands** directly. For example, you might run `kubectl create pod <name>` to create a Pod.
+
+### Why Use Declarative Approach?
+Most of the time, the declarative approach is used because it is more organized and easier to manage. You can easily share YAML files, and it gives a clear, repeatable process for creating objects.
+
+In summary, in Kubernetes, we create objects like Pods, Deployments, and Services. We usually prefer the declarative approach by using YAML files and the `kubectl apply` command to create and manage these objects.
+
+---
 ## Creating and Managing Pods
 
 ### Creating a Pod
