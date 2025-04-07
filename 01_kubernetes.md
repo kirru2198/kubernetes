@@ -202,11 +202,11 @@ When you run commands using kubectl, it sends requests to the Kubernetes API ser
    - kubectl
 
 3. **Assign IAM Role to EC2 Instance**: Assign a role with necessary permissions.
-   - You need to assign a role to your EC2 instance. This role should have permissions such as:
-					 - EC2 full access
-					 - VPC full access
-					 - S3 full access
-   - For testing purposes, you can use an admin policy, but in production, you would create a more restrictive role with the necessary permissions.
+- You need to assign a role to your EC2 instance. This role should have permissions such as:
+   - EC2 full access
+   - VPC full access
+   - S3 full access
+- For testing purposes, you can use an admin policy, but in production, you would create a more restrictive role with the necessary permissions.
 
 Implimentation:
 ---
