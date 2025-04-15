@@ -6,6 +6,7 @@ Now, even though the books are in different rooms, you can still go to **any roo
 
 That’s exactly what a **distributed file system** does.
 
+<img width="486" alt="image" src="https://github.com/user-attachments/assets/73f00a8f-afbc-4ba9-8ca4-8a56f6ebe35b" />
 
 ---
 
