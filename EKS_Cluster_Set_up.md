@@ -6,7 +6,11 @@
    - Launch an EC2 instance.
 
 2. **Install AWS CLI (latest version):**
-   - Follow the installation instructions for AWS CLI.
+   - Follow the installation instructions for AWS CLI. (for Linux it is in built)
+   - check the intsllation by running the following command:
+```bash
+aws --version
+```
 
 3. **Setup kubectl:**
    a. Download kubectl version 1.21
@@ -19,6 +23,7 @@
    ```bash
    kubectl version --short --client
    ```
+   Reference: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 
 4. **Setup eksctl:**
    a. Download and extract the latest release
@@ -30,11 +35,19 @@
    ```bash
    eksctl version
    ```
+   Refrerence: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
 
 5. **Create IAM Role:**
    - Create an IAM role and attach it to the EC2 instance.
    - The IAM user should have programmatic access and permissions for IAM, EC2, and CloudFormation.
    - Check eksctl documentation for minimum IAM policies.
+  
+> 🖥️ Using AWS Console:
+> - Go to EC2 > Instances.
+> - Select your instance.
+> - Click Actions > Security > Modify IAM Role.
+> - Choose the IAM role you want to attach.
+> - Click Update IAM role.
 
 #### Create Cluster and Nodes:
 
