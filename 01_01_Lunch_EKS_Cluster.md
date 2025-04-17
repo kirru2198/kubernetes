@@ -50,7 +50,7 @@ Example:
 ```bash
 eksctl create cluster --name my-cluster \
    --region ap-south-1 \
-   --node-type t2.small
+   --node-type t2.medium
 ```
 
 #### Delete EKS Cluster:
