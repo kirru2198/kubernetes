@@ -46,7 +46,7 @@ aws --version
 > - Go to EC2 > Instances.
 > - Select your instance.
 > - Click Actions > Security > Modify IAM Role.
-> - Choose the IAM role you want to attach.
+> - Choose the IAM role you want to attach. (While creating Role choose AWS service)
 > - Click Update IAM role.
 
 #### Create Cluster and Nodes:
