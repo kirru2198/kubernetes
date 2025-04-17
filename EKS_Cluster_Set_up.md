@@ -1,5 +1,12 @@
 ### Setup Kubernetes on Amazon EKS
 
+1. Launch an EC2 instance (Amazon Linux or anything)
+2. Attach EC2 ab IAM role of needed
+3. Install kubectl
+4. Install eksctl
+5. Create Cluster
+
+
 #### Prerequisites:
 
 1. **EC2 Instance:**
