@@ -15,6 +15,9 @@
 2. **Install AWS CLI (latest version):**
    - Follow the installation instructions for AWS CLI. (for Linux it is in built)
    - check the intsllation by running the following command:
+     
+Reference: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
 ```bash
 aws --version
 ```
