@@ -106,3 +106,51 @@ This tells Kubernetes:
 Later, we’ll talk about how to make this Service available **outside** the cluster.
 
 ---
+
+Here's a simple **Pod YAML file** that works perfectly with your `webapp-service.yaml` service definition. This Pod includes the correct label (`app: webapp`) so that the service can find and forward traffic to it.
+
+---
+
+### ✅ `webapp-pod.yaml` (related Pod file)
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp
+  labels:
+    app: webapp   # 👈 This label matches the selector in the service
+spec:
+  containers:
+    - name: web-container
+      image: nginx        # Using nginx as a sample web server
+      ports:
+        - containerPort: 80
+```
+
+---
+
+### 🧠 How it connects:
+
+* **Pod name**: `webapp`
+* **Label**: `app: webapp` → this is how the service finds this Pod
+* **Container**: runs NGINX (a simple web server)
+* **Port**: exposes port `80` (which the service will route to)
+
+---
+
+### 🧪 To apply them:
+
+```bash
+kubectl apply -f webapp-pod.yaml
+kubectl apply -f webapp-service.yaml
+```
+
+Then check:
+
+```bash
+kubectl get pods
+kubectl get services
+```
+
+
